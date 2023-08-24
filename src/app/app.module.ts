@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenuComponent } from './shared/menu/menu.component';
-import { CardComponent } from './shared/container/card.component';
+import { CardComponent } from './shared/card/card.component';
 
 @NgModule({
   declarations: [

@@ -1,10 +1,39 @@
 <mat-toolbar color="primary">
-    <button mat-icon-button  aria-label="Menu icon">
+    <button mat-icon-button  aria-label="Menu icon" (click)="drawer.toggle()">
       <mat-icon>menu</mat-icon>
     </button>
-    <span>LU5MCD</span>
+    <span>{{ titulo | uppercase }}</span>
     <span class="spacer"></span>
-    <button mat-icon-button  aria-label="Share icon">
+    <button mat-icon-button  aria-label="Share icon" onclick="share">
       <mat-icon>share</mat-icon>
     </button>
   </mat-toolbar>
+
+  <mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+
+      <p class="center">
+        <button mat-fab color="warn" aria-label="Home">
+          <mat-icon>home</mat-icon>
+        </button>
+      </p>
+
+      <p>
+        <button mat-raised-button class="ancho">
+          QSL Card
+        </button>
+      </p>
+
+      <p>
+        <button mat-raised-button class="ancho">
+          Contactos QRZ.com
+        </button>
+      </p>
+
+      <p>
+        <button mat-raised-button class="ancho">
+          Certificados
+        </button>
+      </p>
+    </mat-drawer>
+  </mat-drawer-container>
