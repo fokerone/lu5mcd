@@ -1,39 +1,26 @@
+<div class="header">
 <mat-toolbar color="primary">
-    <button mat-icon-button  aria-label="Menu icon" (click)="drawer.toggle()">
-      <mat-icon>menu</mat-icon>
-    </button>
     <span>{{ titulo | uppercase }}</span>
+    <span class="spacer"></span>
+    <button mat-stroked-button	 color="basic" >
+      ESTACIÓN
+    </button>
+    <span class="p2"></span>
+    <button mat-stroked-button	 color="basic" >
+     QSL CARD
+    </button>
+    <span class="p2"></span>
+    <button mat-stroked-button	 color="basic" >
+      CONTACTOS
+     </button>
+     <span class="p2"></span>
+     <button mat-stroked-button	 color="basic" >
+      SDR
+     </button>
     <span class="spacer"></span>
     <button mat-icon-button  aria-label="Share icon" onclick="share">
       <mat-icon>share</mat-icon>
     </button>
   </mat-toolbar>
 
-  <mat-drawer-container class="container" autosize>
-    <mat-drawer #drawer class="sidenav" mode="side">
-
-      <p>
-        <button mat-raised-button color="primary" class="ancho">
-          ESTACIÓN
-        </button>
-      </p>
-
-      <p>
-        <button mat-raised-button color="primary" class="ancho">
-          QSL CARD
-        </button>
-      </p>
-
-      <p>
-        <button mat-raised-button color="primary" class="ancho">
-          CONTACTOS QRZ.COM
-        </button>
-      </p>
-
-      <p>
-        <button mat-raised-button color="primary" class="ancho">
-          SDR 
-        </button>
-      </p>
-    </mat-drawer>
-  </mat-drawer-container>
+</div>
